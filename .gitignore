@@ -1,0 +1,16 @@
+README.html
+*.aux
+*.bak
+*.bbl
+*.blg
+*.el
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.sha256
+*.tmp
+*.toc
+*.xdv
+*synctex*
+result
