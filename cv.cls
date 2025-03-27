@@ -8,12 +8,10 @@
   pdfauthor={Henrique Sebastião da Silva Rosa},
   pdftitle={Henrique Sebastião da Silva Rosa},
   pdfsubject={
-    Desenvolvedor back-end com 1 ano e 8 meses de experiência.
-    Tenho conhecimento em redes de computadores há mais de 3 anos
-    e com sistemas Linux há mais de 4 anos.
-    Atualmente estou em busca de uma transição de carreira para a
-    área de desenvolvimento,
-    visando crescer e contribuir em ambientes e projetos inovadores.
+    Desenvolvedor back-end com 1 ano e 8 meses de experiência em projetos escaláveis,
+    combinando sólidos conhecimentos em redes de computadores (3+ anos) e sistemas Linux (4+ anos).
+    Atuando com Python, focando em arquiteturas RESTful,
+    integração contínua e entrega de valor através de soluções cloud-native.
   },
   pdfkeywords={
     backend,
