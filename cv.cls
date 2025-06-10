@@ -41,8 +41,6 @@
 
 \def\yourname#1{\def\@yourname{#1}}
 \def\youraddress#1{\def\@youraddress{#1}}
-\def\yourportifolio#1{\def\@yourportifolio{#1}}
-\def\yourgithub#1{\def\@yourgithub{#1}}
 \def\youremail#1{\def\@youremail{#1}}
 \def\yourwebsite#1{\def\@yourwebsite{#1}}
 
@@ -97,8 +95,6 @@
 
   \vspace{0.25cm}%
 
-  Portifólio: \href{https://\@yourportifolio}{\nolinkurl{\@yourportifolio}}\\
-  GitHub: \href{https://\@yourgithub}{\nolinkurl{\@yourgithub}}\\
   Email: \href{mailto:\@youremail}{\nolinkurl{\@youremail}}\\
   Telefone: (69) 99346-7069
 }
