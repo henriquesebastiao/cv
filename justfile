@@ -1,12 +1,9 @@
 doc := "cv"
 
-all: format spell longlines build warn thumbnail compress
+all: format build thumbnail compress
 
 alias c := clean
 alias f := format
-alias w := warn
-alias s := spell
-alias l := longlines
 alias b := build
 
 format:
@@ -27,15 +24,6 @@ thumbnail:
     @magick temp.png -bordercolor gray20 -border 3x3 temp.png
     @pngquant temp.png -Q 0-10 -f -o thumbnail.png
     @rm -f temp*.png
-
-warn:
-    @tex-check {{doc}}.log
-
-longlines:
-    @long-lines {{doc}}.tex {{doc}}.bib justfile
-
-spell:
-    @spell-check -b {{doc}}.tex {{doc}}.bib
 
 clean:
     @tex-clean
