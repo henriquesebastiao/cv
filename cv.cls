@@ -38,6 +38,9 @@
 \RequirePackage{fancyhdr}
 \RequirePackage{enumitem}
 \RequirePackage{ifthen}
+\RequirePackage{wrapfig}
+\RequirePackage{graphicx}
+\RequirePackage[none]{hyphenat}
 
 \def\yourname#1{\def\@yourname{#1}}
 \def\youraddress#1{\def\@youraddress{#1}}
@@ -88,12 +91,19 @@
 \renewcommand{\maketitle}{%
   \vspace*{-1.2cm}
   \begin{huge}
+    \begin{wrapfigure}{R}{4.5cm}
+      \includegraphics[width=1\linewidth]{figures/avatar.png} 
+      \centering
+      \label{fig:wrapfig}
+    \end{wrapfigure}
     \@yourname
   \end{huge}
 
   \vspace{0.25cm}%
 
-  \@youraddress
+  \parbox{11cm}{
+    \@youraddress
+  }
 
   \vspace{0.25cm}%
 
