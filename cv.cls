@@ -45,6 +45,7 @@
 \def\yourname#1{\def\@yourname{#1}}
 \def\youraddress#1{\def\@youraddress{#1}}
 \def\yourportfolio#1{\def\@yourportfolio{#1}}
+\def\yourlinkedin#1{\def\@yourlinkedin{#1}}
 \def\yourgithub#1{\def\@yourgithub{#1}}
 \def\youremail#1{\def\@youremail{#1}}
 \def\yourwebsite#1{\def\@yourwebsite{#1}}
@@ -91,7 +92,7 @@
 \renewcommand{\maketitle}{%
   \vspace*{-1.2cm}
   \begin{huge}
-    \begin{wrapfigure}{R}{4.5cm}
+    \begin{wrapfigure}{R}{4cm}
       \includegraphics[width=1\linewidth]{figures/avatar.png} 
       \centering
       \label{fig:wrapfig}
@@ -101,13 +102,14 @@
 
   \vspace{0.25cm}%
 
-  \parbox{11cm}{
+  \parbox{11.5cm}{
     \@youraddress
   }
 
   \vspace{0.25cm}%
 
   Portfólio: \href{https://\@yourportfolio}{\nolinkurl{\@yourportfolio}}\\
+  LinkedIn: \href{https://\@yourlinkedin}{\nolinkurl{\@yourlinkedin}}\\
   GitHub: \href{https://\@yourgithub}{\nolinkurl{\@yourgithub}}\\
   Email: \href{mailto:\@youremail}{\nolinkurl{\@youremail}}\\
   Telefone: (69) 99346-7069
